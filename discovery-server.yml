@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: discovery-server
+  main:
+    banner-mode: off
+logging:
+  level:
+    root: warn
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+server:
+  port: 8761
