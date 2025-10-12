@@ -5,7 +5,9 @@ spring:
     banner-mode: off
 server:
   port: 9090
-
+logging:
+  level:
+    root: warn
 eureka:
   client:
     service-url:
