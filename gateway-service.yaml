@@ -1,12 +1,10 @@
 spring:
   main:
     banner-mode: off
-server:
-  port: 9090
-logging:
-  level:
-    root: warn
 eureka:
   client:
     service-url:
       defaultZone: http://discovery-service:8761/eureka/
+logging:
+  level:
+    root: warn
