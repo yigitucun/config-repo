@@ -1,7 +1,8 @@
-server:
-  port: 9090
+spring:
   main:
     banner-mode: off
+server:
+  port: 9090
 logging:
   level:
     root: warn
