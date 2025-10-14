@@ -1,14 +1,6 @@
 spring:
   main:
     banner-mode: off
-  cloud:
-    config:
-      fail-fast: true # Bütün denemeler sonunda hala bağlanamazsa uygulamayı çökert
-      retry:
-        enabled: true
-        initial-interval: 2000     # İlk denemeden önce 2 saniye bekle
-        max-attempts: 30           # En fazla 30 kez dene
-        multiplier: 1.5   
 eureka:
   client:
     service-url:
