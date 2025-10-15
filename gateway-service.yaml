@@ -1,6 +1,13 @@
 spring:
   main:
     banner-mode: off
+  cloud:
+     gateway:
+      routes:
+        - id: todo-service  # 1. Rota için benzersiz bir isim
+          uri: lb://TODO-SERVICE   # 2. İsteğin gönderileceği HEDEF servis
+          predicates:                 # 3. Bu rotanın tetiklenmesi için gereken KOŞUL(lar)
+            - Path=/api/todos/**
 eureka:
   client:
     service-url:
