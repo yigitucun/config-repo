@@ -14,3 +14,7 @@ logging:
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka/
