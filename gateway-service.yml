@@ -11,7 +11,7 @@ spring:
             - id: user-service-route
               uri: lb://USER-SERVICE
               predicates:
-                - Path=/api/**
+                - Path=/api/users/**
 logging:
   level:
     root: warn
